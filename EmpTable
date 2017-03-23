@@ -1,0 +1,42 @@
+USE [PAYROLL]
+GO
+
+/****** Object:  Table [dbo].[EmployeeMaster]    Script Date: 3/23/2017 5:30:30 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[EmployeeMaster](
+	[EmpID] [int] NOT NULL,
+	[Designation] [varchar](50) NOT NULL,
+	[Department] [varchar](50) NOT NULL,
+	[EmpType] [varchar](20) NOT NULL,
+	[Location] [varchar](20) NULL,
+	[DOB] [date] NOT NULL,
+	[PAN] [varchar](15) NULL,
+	[AadharNo] [varchar](30) NULL,
+	[PhoneNo] [int] NOT NULL,
+	[Email] [varchar](40) NULL,
+	[DOJ] [date] NOT NULL,
+	[ValidFrom] [date] NULL,
+	[ToFrom] [date] NULL,
+	[BankName] [varchar](50) NULL,
+	[AccountNo] [int] NOT NULL,
+	[Status] [char](10) NULL,
+	[CreatedDate] [datetime] NULL,
+	[ModifiedDate] [datetime] NULL,
+	[ModifiedBy] [varchar](30) NULL,
+	[PortalId] [varchar](30) NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
